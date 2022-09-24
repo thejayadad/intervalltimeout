@@ -1,0 +1,41 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box{
+    height: 300px;
+    width: 300px;
+    background: black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    animation: flash 2s infinite;
+    color: white;
+    border-radius: 10px;
+}
+
+#word{
+    color: white;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+
+@keyframes flash {
+    0%, 35%, 44%, 65%, 100%{
+        text-shadow:
+        white 0 0 12px,
+        orangered 0 0 24px,
+        orangered 0 0 26px;
+    }
+
+    50%, 70% {
+        text-shadow: none;
+    }
+}
